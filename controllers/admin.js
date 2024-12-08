@@ -22,7 +22,7 @@ exports.postAddProduct = (req, res, next) => {
     })
     .then(result => {
       // console.log(result);
-      console.log('Created Product');
+      console.log('Created Product!');
       res.redirect('/admin/products');
     })
     .catch(err => {
@@ -95,7 +95,7 @@ exports.postDeleteProduct = (req, res, next) => {
       return product.destroy();
     })
     .then(result => {
-      console.log('DESTROYED PRODUCT');
+      console.log('Destroyed Product!');
       res.redirect('/admin/products');
     })
     .catch(err => console.log(err));
